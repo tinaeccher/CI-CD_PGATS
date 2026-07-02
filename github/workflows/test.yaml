@@ -60,6 +60,6 @@ jobs:
       - name: Publicar relatorio de testes # Passo para publicar o relatório de testes como artefato da pipeline
         uses: actions/upload-artifact@v7 # Ação do GitHub para fazer upload de artefatos
         with: 
-          name: Relatorio de Testes Mochawesome # Nome do artefato (relatório de testes)
+          name: Relatorio de Testes # Nome do artefato (relatório de testes)
           path: mochawesome-report # Caminho para o diretório onde o relatório de testes foi gerado (deve ser consistente com a configuração do mochawesome)
           retention-days: 7 # Define o tempo de retenção do artefato (em dias) antes de ser excluído automaticamente
